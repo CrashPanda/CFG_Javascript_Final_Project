@@ -24,7 +24,7 @@ document.getElementById("scrollPage").onclick = function() {
 
 // Scroll to menu function
 function scrollPage() { // declares function 'scrollPage'
-  document.getElementById("menu").scrollIntoView({block: "start", behavior: "smooth"}); // retrieves element 'id="menu"', and calls the 'scrollIntoView' method and sets its scroll behaviour and location
+  document.getElementById("menu").scrollIntoView({behavior: "smooth"}); // retrieves element 'id="menu"', and calls the 'scrollIntoView' method and sets its scroll behaviour and location
 }
 
 //EVENT TRIGGER onclick="flipCard(this)"
