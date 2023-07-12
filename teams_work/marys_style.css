@@ -1,0 +1,219 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f6f6f6;
+}
+
+#header {
+  background-color: #333;
+  /*background-image: url('https://i.postimg.cc/W1syGjsj/sushibaykapolei-logo-name.png');
+  background-repeat:no-repeat;
+  background-position:center;*/
+  padding: 40px;
+  color: #fff;
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 48px;
+  margin: 0;
+}
+  
+
+.btn-group{
+  display: inline-flex;  /*removes space between the buttons*/
+  overflow: hidden;  
+ /*position: fixed;*/
+ top: 0;
+}
+
+
+/*#dish1 { 
+  background-image: url(https://kellyloves.com/cdn/shop/articles/Untitled_2048_x_1024px_2048_x_1024px_1024_x_1024px_1200x.jpg?v=1652972260);
+  
+} image for the box*/
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #FF5F5F;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 2px;
+  transition: background-color 0.3s;
+  font-size: 16px;
+  margin-top: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #E63B3B;
+}
+
+#menu {
+  padding: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.category {
+  margin-bottom: 80px;
+  text-align: center;
+ 
+}
+
+.card {
+  display: inline-block;
+  vertical-align: top;
+  width: 400px;
+  margin: 20px;
+  height: 145px;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+}
+
+.card.flipped {
+  transform: rotateY(180deg);
+}
+
+.front, .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  transition: transform 0.3s;
+}
+
+
+.front {
+  transform: rotateY(0deg);
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+.front h4,
+.back h4 {
+  margin-top: 0;
+}
+
+.front p,
+.back ul {
+  margin-top: 10px;
+}
+
+.back h4 {
+  margin-bottom: 20px;
+}
+
+.back ul {
+  padding: 0;
+  list-style: none;
+}
+
+.back ul li {
+  margin-bottom: 5px;
+}
+
+.back button {
+  margin-top: 20px;
+}
+
+/*
+ion-icon {
+  font-size: 40px;
+}
+
+.cart ion-icon {
+  vertical-align:bottom;
+  font-size:20px;
+  padding-right: 5px;
+}*/
+
+.button-cart{
+  position:fixed;
+  top:0;
+  right:10px;
+  text-decoration:none;
+  z-index:10;
+}
+
+/*  .cart {
+  position: fixed;
+  background: #F3F3F3;
+  width: 400px;
+  max-width: 90%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  box-shadow: -2px 0 4px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transform: translate(500px, 0);
+  transition: transform $speed ease-in-out;
+  z-index: 20;
+}
+
+.cart {
+  transform: translate(0, 0);
+}
+
+.cart__header {
+  box-sizing: border-box;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.9);
+  width: 100%;
+  padding: 15px 15px;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 2;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+  .cart__text {
+    float: right;
+  }
+}
+
+.cart__title {
+  font-size: 20px;
+  line-height: 40px;
+  margin: 0;
+  float: left;
+}
+
+.cart__products {
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 70px 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  z-index: 1;
+}*/
