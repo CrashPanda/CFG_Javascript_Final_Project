@@ -1,0 +1,88 @@
+function scrollToHome() {
+  const homeSection = document.getElementById('home');
+  homeSection.scrollIntoView({ behavior: 'smooth' });
+}
+
+
+function scrollToMenu1() {
+  const menuSection = document.getElementById('menu1');
+  menuSection.scrollIntoView({ behavior: 'smooth' });
+}
+
+function scrollToMenu2() {
+  const menuSection = document.getElementById('menu2');
+  menuSection.scrollIntoView({ behavior: 'smooth' });
+}
+
+function scrollToMenu3() {
+  const menuSection = document.getElementById('menu3');
+  menuSection.scrollIntoView({ behavior: 'smooth' });
+}
+
+function scrollToMenu4() {
+  const menuSection = document.getElementById('menu4');
+  menuSection.scrollIntoView({ behavior: 'smooth' });
+}
+
+function flipCard(button) {
+  var card = button.parentNode.parentNode;
+  card.classList.toggle("flipped");
+}
+
+
+let carts = document.querySelectorAll('.add-to-cart');
+
+let products = [
+  {
+    name: 'Sushi 1',
+    price: 12,
+    inCart: 0 
+  },
+    
+  {
+    name: 'Sushi 2',
+    price: 14,
+    inCart: 0 
+  },
+ 
+  {
+    name: 'Sushi 3',
+    price: 14,
+    inCart: 0 
+  },
+  
+];
+
+/*
+for (let i=0; i < carts.length; i++) {
+<!-- console.log("my loop");-->
+  carts[i].addEventListener(`click`, () => 
+    {
+   console.log("added to cart");
+    <!--cartNumbers();-->
+  })
+}
+
+function onLoadCartNumbers() {
+  let productNumbers = localStorage.getItem(`cartNumbers`);
+  
+  if(productNumbers) {
+    document.querySelector('.myCart span').textContent = productNumbers;
+  }
+}
+function cartNumbers() {
+  let productNumbers = localStorage.getItem(`cartNumbers`)
+  <!--console.log(productNumbers);-->
+  
+  <!--convert string to number-->
+  productNumbers = parseInt(productNumbers);
+  
+  if( productNumbers) {
+  localStorage.setItem(`cartNumbers`, productNumbers + 1);
+    document.querySelector('.button-cart`, `span').textContent = productNumbers + 1;
+  } else {
+  localStorage.setItem(`cartNumbers`, 1);
+    document.querySelector('.button-cart`, `span').textContent = 1;
+  } 
+  
+}*/
