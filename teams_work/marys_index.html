@@ -1,0 +1,224 @@
+<head>
+<script type='module' src='https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js'></script>
+<script nomodule='' src='https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js'></script>
+  
+  <!--<link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">-->
+  </head>
+
+<body>
+  <section id="home">
+  <header id="header">
+    <h1>Sushi Bay</h1>   
+      
+    <div class="btn-group">
+    <button class="btn" onclick="scrollToHome()">Home</button>
+    <button class="btn" onclick="scrollToMenu1()">Sushi</button>
+    <button class="btn" onclick="scrollToMenu2()">Set Meals</button>
+    <button class="btn" onclick="scrollToMenu3()">Deserts</button>
+    <button class="btn" onclick="scrollToMenu4()">Beverages</button>
+      </div>
+  </header>
+    </section>
+
+  <section id="menu1">
+    <div class="category">
+      <h2>Category 1</h2>
+      <div id="dish1" class="card">
+        <div class="front">
+        <!--  <img src="#" alt="Dish 1">-->
+          <h4>Dish 1</h4>
+          <p>Description of dish 1</p>
+          <h3>£10.00</h3>
+          <button id="btn-add" class="btn add-to-cart" href="#">Add to Cart</button>
+          <button class="btn more-info" onclick="flipCard(this)"> More Information </button>
+        </div>
+        <div class="back">
+          <h4>Ingredients</h4>
+          <ul>
+            <li>Ingredient 1</li>
+            <li>Ingredient 2</li>
+            <li>Ingredient 3</li>
+          </ul>
+          <button class="btn more-info" onclick="flipCard(this)">Close</button>
+        </div>
+      </div>
+
+      
+      
+     <div class="card">
+        <div class="front">
+         <!-- <img src="#" alt="Dish 2">-->
+          <h4>Dish 2</h4>
+          <p>Description of dish 2</p>
+          <h3>£10.00</h3>
+          <button id="btn-add" class="btn add-to-cart" href="#">Add to Cart</button>
+          <button class="btn more-info" onclick="flipCard(this)"> More Information </button>
+        </div>
+        <div class="back">
+          <h4>Ingredients</h4>
+          <ul>
+            <li>Ingredient 1</li>
+            <li>Ingredient 2</li>
+            <li>Ingredient 3</li>
+          </ul>
+          <button class="btn more-info" onclick="flipCard(this)">Close</button>
+        </div>
+      </div>
+     
+         <div class="card">
+        <div class="front">
+          <!--<img src="" alt="Dish 3">-->
+          <h4>Dish 3</h4>
+          <p>Description of dish 3</p>
+          <h3>£10.00</h3>
+          <button id="btn-add" class="btn add-to-cart" href="#">Add to Cart</button>
+          <button class="btn more-info" onclick="flipCard(this)"> More Information </button>
+        </div>
+        <div class="back">
+          <h4>Ingredients</h4>
+          <ul>
+            <li>Ingredient 1</li>
+            <li>Ingredient 2</li>
+            <li>Ingredient 3</li>
+          </ul>
+          <button class="btn more-info" onclick="flipCard(this)">Close</button>
+        </div>
+      </div>
+
+    
+    </div>
+</section>
+  
+  <!--<br></br>
+   <br></br>
+
+ <section id="menu2">
+    <div class="category">
+      <h2>Category 2</h2>
+      <div class="card">
+        <img src="dish4.jpg" alt="Dish 4">
+        <h4>Dish 4</h4>
+        <p>Description of dish 4</p>
+        <button class="btn add-to-cart">Add to Cart</button>
+        <button class="btn more-info">More Information</button>
+      </div>
+
+      <div class="card">
+        <img src="dish5.jpg" alt="Dish 5">
+        <h4>Dish 5</h4>
+        <p>Description of dish 5</p>
+        <button class="btn add-to-cart">Add to Cart</button>
+        <button class="btn more-info">More Information</button>
+      </div>
+
+      <div class="card">
+        <img src="dish6.jpg" alt="Dish 6">
+        <h4>Dish 6</h4>
+        <p>Description of dish 6</p>
+        <button class="btn add-to-cart">Add to Cart</button>
+        <button class="btn more-info">More Information</button>
+      </div>
+    </div>
+  </section>
+  
+<br></br>
+<br></br>
+
+ <section id="menu3">
+    <div class="category">
+      <h2>Category 3</h2>
+      <div class="card">
+        <img src="dish4.jpg" alt="Dish 4">
+        <h4>Dish 4</h4>
+        <p>Description of dish 4</p>
+        <button class="btn add-to-cart">Add to Cart</button>
+        <button class="btn more-info">More Information</button>
+      </div>
+
+      <div class="card">
+        <img src="dish5.jpg" alt="Dish 5">
+        <h4>Dish 5</h4>
+        <p>Description of dish 5</p>
+        <button class="btn add-to-cart">Add to Cart</button>
+        <button class="btn more-info">More Information</button>
+      </div>
+
+      <div class="card">
+        <img src="dish6.jpg" alt="Dish 6">
+        <h4>Dish 6</h4>
+        <p>Description of dish 6</p>
+        <button class="btn add-to-cart">Add to Cart</button>
+        <button class="btn more-info">More Information</button>
+      </div>
+    </div>
+  </section>
+  
+  
+<br></br>
+<br></br>
+
+ <section id="menu4">
+    <div class="category">
+      <h2>Category 4</h2>
+      <div class="card">
+        <img src="dish4.jpg" alt="Dish 4">
+        <h4>Dish 4</h4>
+        <p>Description of dish 4</p>
+        <button class="btn add-to-cart">Add to Cart</button>
+        <button class="btn more-info">More Information</button>
+      </div>
+
+      <div class="card">
+        <img src="dish5.jpg" alt="Dish 5">
+        <h4>Dish 5</h4>
+        <p>Description of dish 5</p>
+        <button class="btn add-to-cart">Add to Cart</button>
+        <button class="btn more-info">More Information</button>
+      </div>
+
+      <div class="card">
+        <img src="dish6.jpg" alt="Dish 6">
+        <h4>Dish 6</h4>
+        <p>Description of dish 6</p>
+        <button class="btn add-to-cart">Add to Cart</button>
+        <button class="btn more-info">More Information</button>
+      </div>
+    </div>
+  </section>
+--->
+
+ <!----cart button ----->
+  <div class="button-cart">
+    <button class="btn"><ion-icon name="cart"></ion-icon>Cart
+   <span> 0 </span>
+      </button>
+</div>
+
+<!--<sidecart class="cart">
+  <div class="cart__header">
+    <h1 class="cart__title">Shopping cart</h1>
+     <p class="cart__text">
+      <button class="button button--light js-toggle-cart" href="#" title="Close cart">
+        Close cart
+      </button>
+    </p>
+  </div>
+  <div class="cart__products js-cart-products">
+    <p class="cart__empty js-cart-empty">
+      Add a product to your cart
+    </p>
+     </div>
+  <div class="cart__footer">
+    <p class="cart__text">
+      <a class="button" href="#" title="Buy products">
+        Buy products
+      </a>
+    </p>
+  </div>
+  </sidecart> -->
+      
+    
+
+
+
+</body>
